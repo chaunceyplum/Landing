@@ -1,0 +1,48 @@
+@import '~bootstrap/scss/bootstrap';
+$primaryColor: #e12026;
+$secondaryColor: #161819;
+$thirdColor: #e2d9c6;
+$fourthColor: #161811;
+
+// ############  MISC  ##############
+.bgColor {
+  background-color: $secondaryColor;
+}
+.beigeBg {
+  background-color: $thirdColor !important;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin: auto;
+  text-align: center;
+}
+.beigeText {
+  color: $thirdColor;
+}
+.redText {
+  color: $primaryColor;
+}
+
+// ############  NAVBAR  ##############
+.navClass {
+  background-color: $secondaryColor !important;
+  color: #e12026 !important;
+  height: 10vh !important;
+}
+.navText {
+  color: #e12026 !important;
+}
+.navToggler {
+  border: #e12026 !important;
+}
+
+// ############  HOME  ##############
+.homeDiv {
+  height: 100vh;
+}
+.homeMainContent {
+  padding-top: 20vh;
+}
