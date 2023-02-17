@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import { animated, useSpring } from '@react-spring/web'
+import { animated, useSpring, useScroll } from '@react-spring/web'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import Card from '@mui/material/Card'
 import CardActions from '@mui/material/CardActions'
@@ -10,14 +10,16 @@ import Typography from '@mui/material/Typography'
 
 const Home = () => {
   const springs = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: 1 },
+    from: { opacity: 0, marginTop: -500 },
+    to: { opacity: 1, marginTop: 0 },
+    config: { delay: 1000, duration: 1000 },
   })
   const alignCenter = { display: 'flex', alignItems: 'center' }
+  //const { scrollYProgress } = useScroll()
 
   return (
-    <div className='homeDiv'>
-      <div className=''>
+    <div className=''>
+      <div className='homeDiv'>
         <Parallax pages={4} style={{}}>
           <ParallaxLayer offset={0} speed={1.5}>
             <Container className='homeMainContent'>
@@ -50,7 +52,7 @@ const Home = () => {
             </Container>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1} speed={0.5}>
+          <ParallaxLayer offset={1} speed={1.5}>
             <Container>
               <Row>
                 <Col xs={6}>
@@ -78,31 +80,100 @@ const Home = () => {
                     </Card> */}
                   </div>
                 </Col>
-                <Col xs={2} />
+                {/* <Col xs={2} /> */}
 
-                <Col xs={4}>
+                <Col xs={6}>
                   <div>
-                    <Card sx={{ minWidth: 275 }}>
+                    {/* <Card sx={{ minWidth: 275 }} className='redBg'>
                       <CardContent>
                         <Typography sx={{ fontSize: 14 }} color='' gutterBottom>
-                          Word of the Day
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua.
                         </Typography>
                         <Typography variant='h5' component='div'>
-                          benevolent
+                          Aenean vel elit scelerisque mauris.
                         </Typography>
-                        <Typography sx={{ mb: 1.5 }} color='text.secondary'>
+                        {/* <Typography sx={{ mb: 1.5 }} color='text.secondary'>
                           adjective
-                        </Typography>
+                        </Typography> *
                         <Typography variant='body2'>
-                          well meaning and kindly.
+                          Venenatis tellus in metus vulputate. Urna porttitor
+                          rhoncus dolor purus non. Enim nunc faucibus a
+                          pellentesque sit amet porttitor.
                           <br />
-                          {'"a benevolent smile"'}
                         </Typography>
                       </CardContent>
                       <CardActions>
                         <Button size='small'>Learn More</Button>
                       </CardActions>
-                    </Card>
+                    </Card> */}
+
+                    <Container>
+                      <Row>
+                        <Col xs={12} sm={6}>
+                          <Container className='redBg'>
+                            <animated.div style={{ ...springs }}>
+                              <h1>Aenean vel elit scelerisque mauris.</h1>
+                              <br />
+                              <h6>Venenatis tellus in metus vulputate.</h6>
+                              <br />
+                              <br />
+                              <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                              </p>
+                            </animated.div>
+                          </Container>
+                        </Col>
+
+                        <Col xs={12} sm={6}>
+                          <Container className='redBg'>
+                            <h1>Aenean vel elit scelerisque mauris.</h1>
+                            <br />
+                            <h6>Venenatis tellus in metus vulputate.</h6>
+                            <br />
+                            <br />
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua.
+                            </p>
+                          </Container>
+                        </Col>
+
+                        <Col xs={12} sm={6}>
+                          <Container className='redBg'>
+                            <h1>Aenean vel elit scelerisque mauris.</h1>
+                            <br />
+                            <h6>Venenatis tellus in metus vulputate.</h6>
+                            <br />
+                            <br />
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua.
+                            </p>
+                          </Container>
+                        </Col>
+
+                        <Col xs={12} sm={6}>
+                          <Container className='redBg'>
+                            <h1>Aenean vel elit scelerisque mauris.</h1>
+                            <br />
+                            <h6>Venenatis tellus in metus vulputate.</h6>
+                            <br />
+                            <br />
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua.
+                            </p>
+                          </Container>
+                        </Col>
+                      </Row>
+                    </Container>
                   </div>
                 </Col>
               </Row>
@@ -137,9 +208,70 @@ const Home = () => {
                     </Card> */}
                   </div>
                 </Col>
-                <Col xs={2} />
-                <Col xs={4}>
-                  <div className='text-white'>stexdrcyftuvgybhunijmok</div>
+                {/* <Col xs={2} /> */}
+                <Col xs={6}>
+                  <Container className='redBg'>
+                    <div className='text-white'>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Gravida cum sociis natoque penatibus et
+                        magnis. Morbi quis commodo odio aenean. Bibendum at
+                        varius vel pharetra vel turpis nunc eget. Ultricies
+                        integer quis auctor elit sed vulputate mi sit amet. Amet
+                        massa vitae tortor condimentum.
+                      </p>
+                      <p>
+                        {' '}
+                        Malesuada proin libero nunc consequat. Condimentum
+                        mattis pellentesque id nibh tortor id aliquet lectus.
+                        Quis auctor elit sed vulputate mi. Ut pharetra sit amet
+                        aliquam id diam maecenas. Aenean vel elit scelerisque
+                        mauris. Lacinia quis vel eros donec ac odio tempor orci.
+                        Imperdiet nulla malesuada pellentesque elit eget gravida
+                        cum sociis. Venenatis tellus in metus vulputate. Urna
+                        porttitor rhoncus dolor purus non. Enim nunc faucibus a
+                        pellentesque sit amet porttitor.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit
+                        duis tristique. Odio eu feugiat pretium nibh ipsum
+                        consequat. Fames ac turpis egestas maecenas pharetra
+                        convallis posuere morbi leo. Integer enim neque volutpat
+                        ac. Est ullamcorper eget nulla facilisi etiam dignissim
+                        diam quis. Fermentum posuere urna nec tincidunt praesent
+                        semper feugiat nibh sed. Blandit libero volutpat sed
+                        cras ornare arcu dui. At elementum eu facilisis sed odio
+                        morbi quis commodo. Convallis tellus id interdum velit
+                        laoreet id donec ultrices. Urna nec tincidunt praesent
+                        semper. Aliquet nibh praesent tristique magna sit amet.
+                        Tempus quam pellentesque nec nam. Cursus mattis molestie
+                        a iaculis at. Augue mauris augue neque gravida in
+                        fermentum et. Sed arcu non odio euismod lacinia at quis.
+                        Accumsan lacus vel facilisis volutpat est. Adipiscing
+                        commodo elit at imperdiet dui accumsan sit amet. Id
+                        cursus metus aliquam eleifend mi in.
+                      </p>
+
+                      <p>
+                        Nunc pulvinar sapien et ligula ullamcorper malesuada
+                        proin. Eget velit aliquet sagittis id consectetur purus
+                        ut. Enim sed faucibus turpis in eu mi bibendum. Sed cras
+                        ornare arcu dui vivamus arcu felis bibendum ut. Vitae
+                        congue eu consequat ac felis donec. Suspendisse sed nisi
+                        lacus sed viverra tellus in. Turpis nunc eget lorem
+                        dolor sed viverra ipsum nunc. Hendrerit gravida rutrum
+                        quisque non tellus. Vel risus commodo viverra maecenas
+                        accumsan lacus vel facilisis. Imperdiet sed euismod nisi
+                        porta lorem mollis aliquam ut porttitor. Ornare
+                        suspendisse sed nisi lacus. Mauris nunc congue nisi
+                        vitae. Odio tempor orci dapibus ultrices in iaculis nunc
+                        sed augue. Semper eget duis at tellus at. Elementum eu
+                        facilisis sed odio morbi quis commodo odio aenean. Metus
+                        dictum at tempor commodo ullamcorper a.
+                      </p>
+                    </div>
+                  </Container>
                 </Col>
                 <Col xs={2} />
               </Row>
@@ -154,28 +286,46 @@ const Home = () => {
               <Row>
                 <Col />
                 <Col xs={4}>
-                  <Container>
-                    <div className={{}}>
-                      <div>
-                        <h3 className='redText'>
-                          blahblahblahghkajlskf;lmdfaksdjlfasdf ASJDKNksnja
-                          aJSHF jhas jh asFJH s
-                        </h3>
+                  <Container className='beigeBg'>
+                    <animated.div style={{ ...springs }}>
+                      <div className='beigeBg'>
+                        <div>
+                          <h3 className='redText'>
+                            bln ahbla hblah ghka jlskf;lmdfak sd jlfasdf ASJDK
+                            Nks nja aJSHF jhas jh asFJH s
+                          </h3>
 
-                        <br />
-                        <h6 className='beigeText'>
-                          sakjdhf qwej qer qer q er wer qwefqs d fasdg sfg rtg
-                          etyh ryuj egvsdacsAD sadaS D asf adf h etyh tyh ert hw
-                          ers fwe d asd
-                        </h6>
+                          <br />
+                          <h6 className='darkText'>
+                            sakjdhf qwej qer qer q er wer qwefqs d fasdg sfg rtg
+                            etyh ryuj egvsdacsAD sadaS D asf adf h etyh tyh ert
+                            hw ers fwe d asd
+                          </h6>
 
-                        <br />
-                        <p>
-                          asdfasd a sd fa sdf asd fas dfa sdf asdf sd fas df asd
-                          fds dsf dsf asd fa sdf qds ga sd
-                        </p>
+                          <br />
+                          <p>
+                            {' '}
+                            Mattis enim ut tellus elementum sagittis vitae. Ut
+                            consequat semper viverra nam libero. Elementum eu
+                            facilisis sed odio morbi. Porta nibh venenatis cras
+                            sed felis eget velit aliquet sagittis. Pellentesque
+                            nec nam aliquam sem et tortor consequat id. Lectus
+                            magna fringilla urna porttitor rhoncus dolor purus.
+                            Malesuada fames ac turpis egestas sed tempus urna.
+                            Sit amet risus nullam eget felis eget nunc lobortis.
+                            Viverra ipsum nunc aliquet bibendum enim. Lacus
+                            suspendisse faucibus interdum posuere lorem ipsum.
+                            Morbi quis commodo odio aenean sed adipiscing diam
+                            donec. Aliquam purus sit amet luctus venenatis
+                            lectus. Venenatis urna cursus eget nunc scelerisque
+                            viverra mauris. Tincidunt nunc pulvinar sapien et
+                            ligula ullamcorper malesuada. Erat pellentesque
+                            adipiscing commodo elit at imperdiet. Gravida arcu
+                            ac tortor dignissim.
+                          </p>
+                        </div>
                       </div>
-                    </div>
+                    </animated.div>
                   </Container>
                 </Col>
                 <Col xs={2} />

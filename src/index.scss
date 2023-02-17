@@ -11,6 +11,12 @@ $fourthColor: #161811;
 .beigeBg {
   background-color: $thirdColor !important;
 }
+.redBg {
+  background-color: $primaryColor;
+}
+.darkText {
+  color: $secondaryColor;
+}
 
 .center {
   display: flex;
