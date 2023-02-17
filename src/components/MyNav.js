@@ -24,7 +24,7 @@ import {
 const MyNav = () => {
   return (
     <div>
-      <Navbar collapseOnSelect expand='md' className='navClass '>
+      <Navbar collapseOnSelect expand='md' className='navClass ' sticky='top'>
         <Container>
           <Navbar.Brand href='#home'>
             <strong className='navText'>(Logo)</strong>
