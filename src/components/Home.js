@@ -10,8 +10,8 @@ import Typography from '@mui/material/Typography'
 
 const Home = () => {
   const springs = useSpring({
-    from: { opacity: 0, marginTop: -500 },
-    to: { opacity: 1, marginTop: 0 },
+    from: { opacity: 0, marginLeft: -500 },
+    to: { opacity: 1, marginLeft: 0 },
     config: { delay: 1000, duration: 1000 },
   })
   const alignCenter = { display: 'flex', alignItems: 'center' }
@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <div className=''>
       <div className='homeDiv'>
-        <Parallax pages={4} style={{}}>
+        <Parallax pages={6} style={{}}>
           <ParallaxLayer offset={0} speed={1.5}>
             <Container className='homeMainContent'>
               <Row>
@@ -55,7 +55,7 @@ const Home = () => {
           <ParallaxLayer offset={1} speed={1.5}>
             <Container>
               <Row>
-                <Col xs={6}>
+                <Col xs={12} sm={6}>
                   <div>
                     {/* <Card sx={{ minWidth: 275 }}>
                       <CardContent>
@@ -82,7 +82,7 @@ const Home = () => {
                 </Col>
                 {/* <Col xs={2} /> */}
 
-                <Col xs={6}>
+                <Col xs={12} sm={6}>
                   <div>
                     {/* <Card sx={{ minWidth: 275 }} className='redBg'>
                       <CardContent>
@@ -111,7 +111,7 @@ const Home = () => {
 
                     <Container>
                       <Row>
-                        <Col xs={12} sm={6}>
+                        <Col xs={12} md={6}>
                           <Container className='redBg'>
                             <animated.div style={{ ...springs }}>
                               <h1>Aenean vel elit scelerisque mauris.</h1>
@@ -128,7 +128,7 @@ const Home = () => {
                           </Container>
                         </Col>
 
-                        <Col xs={12} sm={6}>
+                        <Col xs={12} md={6}>
                           <Container className='redBg'>
                             <h1>Aenean vel elit scelerisque mauris.</h1>
                             <br />
@@ -143,7 +143,7 @@ const Home = () => {
                           </Container>
                         </Col>
 
-                        <Col xs={12} sm={6}>
+                        <Col xs={12} md={6}>
                           <Container className='redBg'>
                             <h1>Aenean vel elit scelerisque mauris.</h1>
                             <br />
@@ -158,7 +158,7 @@ const Home = () => {
                           </Container>
                         </Col>
 
-                        <Col xs={12} sm={6}>
+                        <Col xs={12} md={6}>
                           <Container className='redBg'>
                             <h1>Aenean vel elit scelerisque mauris.</h1>
                             <br />
@@ -183,7 +183,7 @@ const Home = () => {
           <ParallaxLayer offset={2} speed={1.5}>
             <Container>
               <Row>
-                <Col xs={6}>
+                <Col xs={12} sm={6}>
                   <div>
                     {/* <Card sx={{ minWidth: 275 }}>
                       <CardContent>
@@ -209,7 +209,7 @@ const Home = () => {
                   </div>
                 </Col>
                 {/* <Col xs={2} /> */}
-                <Col xs={6}>
+                <Col xs={12} sm={6}>
                   <Container className='redBg'>
                     <div className='text-white'>
                       <p>
@@ -222,7 +222,6 @@ const Home = () => {
                         massa vitae tortor condimentum.
                       </p>
                       <p>
-                        {' '}
                         Malesuada proin libero nunc consequat. Condimentum
                         mattis pellentesque id nibh tortor id aliquet lectus.
                         Quis auctor elit sed vulputate mi. Ut pharetra sit amet
@@ -281,47 +280,46 @@ const Home = () => {
           <ParallaxLayer
             sticky={{ start: 1, end: 3 }}
             style={{ ...alignCenter, justifyContent: 'flex-center' }}
+            className='homeBackDiv'
           >
             <Container>
               <Row>
                 <Col />
-                <Col xs={4}>
+                <Col xs={0} sm={4}>
                   <Container className='beigeBg'>
                     <animated.div style={{ ...springs }}>
                       <div className='beigeBg'>
                         <div>
                           <h3 className='redText'>
-                            bln ahbla hblah ghka jlskf;lmdfak sd jlfasdf ASJDK
-                            Nks nja aJSHF jhas jh asFJH s
+                            Porta nibh venenatis cras sed felis eget velit
+                            aliquet sagittis. Pellentesque nec nam aliquam sem
+                            et tortor consequat id.
                           </h3>
 
                           <br />
                           <h6 className='darkText'>
-                            sakjdhf qwej qer qer q er wer qwefqs d fasdg sfg rtg
-                            etyh ryuj egvsdacsAD sadaS D asf adf h etyh tyh ert
-                            hw ers fwe d asd
+                            Mattis enim ut tellus elementum sagittis vitae. Ut
+                            consequat semper viverra nam libero. Elementum eu
+                            facilisis sed odio morbi.
                           </h6>
 
                           <br />
                           <p>
-                            {' '}
-                            Mattis enim ut tellus elementum sagittis vitae. Ut
-                            consequat semper viverra nam libero. Elementum eu
-                            facilisis sed odio morbi. Porta nibh venenatis cras
-                            sed felis eget velit aliquet sagittis. Pellentesque
-                            nec nam aliquam sem et tortor consequat id. Lectus
-                            magna fringilla urna porttitor rhoncus dolor purus.
-                            Malesuada fames ac turpis egestas sed tempus urna.
-                            Sit amet risus nullam eget felis eget nunc lobortis.
-                            Viverra ipsum nunc aliquet bibendum enim. Lacus
-                            suspendisse faucibus interdum posuere lorem ipsum.
-                            Morbi quis commodo odio aenean sed adipiscing diam
-                            donec. Aliquam purus sit amet luctus venenatis
-                            lectus. Venenatis urna cursus eget nunc scelerisque
-                            viverra mauris. Tincidunt nunc pulvinar sapien et
-                            ligula ullamcorper malesuada. Erat pellentesque
-                            adipiscing commodo elit at imperdiet. Gravida arcu
-                            ac tortor dignissim.
+                            Porta nibh venenatis cras sed felis eget velit
+                            aliquet sagittis. Pellentesque nec nam aliquam sem
+                            et tortor consequat id. Lectus magna fringilla urna
+                            porttitor rhoncus dolor purus. Malesuada fames ac
+                            turpis egestas sed tempus urna. Sit amet risus
+                            nullam eget felis eget nunc lobortis. Viverra ipsum
+                            nunc aliquet bibendum enim. Lacus suspendisse
+                            faucibus interdum posuere lorem ipsum. Morbi quis
+                            commodo odio aenean sed adipiscing diam donec.
+                            Aliquam purus sit amet luctus venenatis lectus.
+                            Venenatis urna cursus eget nunc scelerisque viverra
+                            mauris. Tincidunt nunc pulvinar sapien et ligula
+                            ullamcorper malesuada. Erat pellentesque adipiscing
+                            commodo elit at imperdiet. Gravida arcu ac tortor
+                            dignissim.
                           </p>
                         </div>
                       </div>
@@ -331,6 +329,119 @@ const Home = () => {
                 <Col xs={2} />
                 <Col xs={4} />
                 <Col />
+              </Row>
+            </Container>
+          </ParallaxLayer>
+          <ParallaxLayer offset={4} speed={1.5}>
+            <Container className='homeMainContent'>
+              <Row className='center'>
+                <Col xs={12} md={10} className='text-center'>
+                  <h1 className='redText'>
+                    <strong>Amet massa vitae tortor condimentum.</strong>
+                  </h1>
+
+                  <br />
+                  <h4 className='beigeText'>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                  </h4>
+                  <br />
+
+                  <br />
+                  <p className='beigeText'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Gravida cum sociis natoque penatibus et magnis.
+                    Morbi quis commodo odio aenean. Bibendum at varius vel
+                    pharetra vel turpis nunc eget. Ultricies integer quis auctor
+                    elit sed vulputate mi sit amet. Amet massa vitae tortor
+                    condimentum.Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.
+                  </p>
+                  {/* <Button className='beigebg btn '>
+                      <strong>Learn More</strong>
+                    </Button> */}
+                </Col>
+                {/* <Col xs={10} lg={4}>
+                  <div className='text-white'>blah</div>
+                </Col> */}
+              </Row>
+            </Container>
+          </ParallaxLayer>
+
+          <ParallaxLayer offset={5} speed={-3.5}>
+            <Container className='homeMainContent'>
+              <Row className='center'>
+                <Col xs={12} md={10} className='text-center'>
+                  <Container>
+                    <Row>
+                      <Col xs={12} md={6}>
+                        <Container className='redBg'>
+                          <animated.div style={{ ...springs }}>
+                            <h1>Aenean vel elit scelerisque mauris.</h1>
+                            <br />
+                            <h6>Venenatis tellus in metus vulputate.</h6>
+                            <br />
+                            <br />
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua.
+                            </p>
+                          </animated.div>
+                        </Container>
+                      </Col>
+
+                      <Col xs={12} md={6}>
+                        <Container className='redBg'>
+                          <h1>Aenean vel elit scelerisque mauris.</h1>
+                          <br />
+                          <h6>Venenatis tellus in metus vulputate.</h6>
+                          <br />
+                          <br />
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.
+                          </p>
+                        </Container>
+                      </Col>
+
+                      <Col xs={12} md={6}>
+                        <Container className='redBg'>
+                          <h1>Aenean vel elit scelerisque mauris.</h1>
+                          <br />
+                          <h6>Venenatis tellus in metus vulputate.</h6>
+                          <br />
+                          <br />
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.
+                          </p>
+                        </Container>
+                      </Col>
+
+                      <Col xs={12} md={6}>
+                        <Container className='redBg'>
+                          <h1>Aenean vel elit scelerisque mauris.</h1>
+                          <br />
+                          <h6>Venenatis tellus in metus vulputate.</h6>
+                          <br />
+                          <br />
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.
+                          </p>
+                        </Container>
+                      </Col>
+                    </Row>
+                  </Container>
+                </Col>
+                {/* <Col xs={10} lg={4}>
+                  <div className='text-white'>blah</div>
+                </Col> */}
               </Row>
             </Container>
           </ParallaxLayer>
