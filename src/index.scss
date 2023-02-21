@@ -2,9 +2,19 @@
 $primaryColor: #e12026;
 $secondaryColor: #161819;
 $thirdColor: #e2d9c6;
-$fourthColor: #161811;
+$fourthColor: #2b38e8;
 
 // ############  MISC  ##############
+
+Container {
+  border-radius: 25%;
+}
+i {
+  color: $fourthColor !important;
+}
+img {
+  background-size: cover;
+}
 .bgColor {
   background-color: $secondaryColor;
 }
@@ -16,6 +26,9 @@ $fourthColor: #161811;
 }
 .darkText {
   color: $secondaryColor;
+}
+.blueText {
+  color: $fourthColor;
 }
 
 .center {
@@ -54,4 +67,5 @@ $fourthColor: #161811;
 }
 .homeBackDiv {
   z-index: -1;
+  height: 70vh;
 }
