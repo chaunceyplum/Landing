@@ -8,19 +8,24 @@ import {
   FormLabel,
   Row,
 } from 'react-bootstrap'
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 const Footer = () => {
   return (
     <div className='redBg footerClass'>
-      <Container className='text-center'>
+      <Container className='redBg text-center'>
         <Row></Row>
         <Row>
-          <Col>
+          <Col xs={12} md={4}>
+            <br />
             <h3>logo(logo)</h3>
-
+            <br />
+            <br />
+            <br />
             <Form>
               <FormGroup>
                 <FormLabel>join our newsletter for free stuff</FormLabel>
+                <br />
                 <FormControl
                   size='sm'
                   type='email'
@@ -28,12 +33,48 @@ const Footer = () => {
                 />
               </FormGroup>
             </Form>
+            <br />
+            <br />
+            <br />
           </Col>
-          <Col>
+          <Col xs={12} md={4}>
+            <br />
             <h3>useful links</h3>
+
+            <br />
+            <ul>
+              <li>Features</li>
+              <br />
+              <li>Pricing</li>
+              <br />
+              <li>Sign Up</li>
+              <br />
+              <li>Log In</li>
+              <br />
+            </ul>
           </Col>
-          <Col>
+          <Col xs={12} md={4}>
+            <br />
             <h3>Social Media</h3>
+            <br />
+            <ul>
+              <li>
+                <FaTwitter />
+              </li>
+              <br />
+              <li>
+                <FaGithub />
+              </li>
+              <br />
+              <li>
+                <FaInstagram />
+              </li>
+              <br />
+              <li>
+                <FaLinkedin />
+              </li>
+              <br />
+            </ul>
           </Col>
           <br />
           <br />
@@ -52,6 +93,7 @@ const Footer = () => {
               <li>cookie settigns</li>
             </ul>
           </Col>
+          <br />
         </Row>
       </Container>
     </div>
