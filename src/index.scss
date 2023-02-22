@@ -15,6 +15,11 @@ i {
 img {
   background-size: cover;
 }
+ul {
+  text-decoration: none;
+  display: inline;
+  list-style: none;
+}
 .bgColor {
   background-color: $secondaryColor;
 }
@@ -68,4 +73,9 @@ img {
 .homeBackDiv {
   z-index: -1;
   height: 70vh;
+}
+
+// ############  FOOTER  ##############
+.footerClass {
+  height: 50vh;
 }
