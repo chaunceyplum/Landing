@@ -21,6 +21,8 @@ import {
   FormGroup,
   ModalHeader,
 } from 'react-bootstrap'
+import SignUp from './SignUp'
+import LogIn from './LogIn'
 
 const MyNav = () => {
   const springs = useSpring({
@@ -33,7 +35,7 @@ const MyNav = () => {
       <animated.div style={{ ...springs }}>
         <Navbar collapseOnSelect expand='md' className='navClass ' sticky='top'>
           <Container>
-            <Navbar.Brand href='#home'>
+            <Navbar.Brand href='/'>
               <strong className='navText'>(Logo)</strong>
             </Navbar.Brand>
             <Navbar.Toggle
@@ -42,10 +44,10 @@ const MyNav = () => {
             />
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav className='me-auto navText'>
-                <Nav.Link href='#features' className='navText'>
+                <Nav.Link href='/features' className='navText'>
                   Features
                 </Nav.Link>
-                <Nav.Link href='#pricing' className='navText'>
+                <Nav.Link href='/pricing' className='navText'>
                   Pricing
                 </Nav.Link>
                 {/* <NavDropdown
@@ -70,10 +72,10 @@ const MyNav = () => {
               </Nav>
               <Nav>
                 <Nav.Link href='#deets' className='navText'>
-                  Log In
+                  <LogIn />
                 </Nav.Link>
                 <Nav.Link eventKey={2} href='#memes' className='navText'>
-                  Sign Up
+                  <SignUp />
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>
