@@ -34,7 +34,11 @@ const SignUp = () => {
       <div>
         {!userEmail ? (
           <div>
-            <Button variant='light' onClick={handleShow}>
+            <Button
+              variant='dark'
+              onClick={handleShow}
+              className='redBg darkText'
+            >
               log In
             </Button>
 

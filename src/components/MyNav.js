@@ -28,7 +28,7 @@ const MyNav = () => {
   const springs = useSpring({
     from: { opacity: 0, marginTop: -100 },
     to: { opacity: 1, marginTop: 0 },
-    config: { delay: 1000, duration: 1000 },
+    config: { duration: 1000 },
   })
   return (
     <div>
