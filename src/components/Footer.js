@@ -13,7 +13,7 @@ import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 const Footer = () => {
   return (
     <div className='redBg footerClass'>
-      <Container className='redBg text-center'>
+      <Container sticky='bottom' className='redBg text-center'>
         <Row></Row>
         <Row>
           <Col xs={12} md={4}>
@@ -22,17 +22,24 @@ const Footer = () => {
             <br />
             <br />
             <br />
-            <Form>
-              <FormGroup>
-                <FormLabel>join our newsletter for free stuff</FormLabel>
-                <br />
-                <FormControl
-                  size='sm'
-                  type='email'
-                  placeholder='Enter Your Email Here!'
-                />
-              </FormGroup>
-            </Form>
+            <Container>
+              <Row>
+                <Col xs={8}>
+                  <Form>
+                    <FormGroup>
+                      <FormLabel>join our newsletter for free stuff</FormLabel>
+                      <br />
+                      <FormControl
+                        size='sm'
+                        type='email'
+                        placeholder='Enter Your Email Here!'
+                        className='center'
+                      />
+                    </FormGroup>
+                  </Form>
+                </Col>
+              </Row>
+            </Container>
             <br />
             <br />
             <br />

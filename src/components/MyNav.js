@@ -44,10 +44,10 @@ const MyNav = () => {
             />
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav className='me-auto navText'>
-                <Nav.Link href='/features' className='navText'>
+                <Nav.Link href='/features' className='navText text-center'>
                   Features
                 </Nav.Link>
-                <Nav.Link href='/pricing' className='navText'>
+                <Nav.Link href='/pricing' className='navText text-center'>
                   Pricing
                 </Nav.Link>
                 {/* <NavDropdown
@@ -71,10 +71,10 @@ const MyNav = () => {
               </NavDropdown> */}
               </Nav>
               <Nav>
-                <Nav.Link href='#deets' className='navText'>
+                <Nav.Link href='#deets' className='navText center'>
                   <LogIn />
                 </Nav.Link>
-                <Nav.Link eventKey={2} href='#memes' className='navText'>
+                <Nav.Link eventKey={2} href='#memes' className='navText center'>
                   <SignUp />
                 </Nav.Link>
               </Nav>

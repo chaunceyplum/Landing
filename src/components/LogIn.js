@@ -39,83 +39,24 @@ const SignUp = () => {
               onClick={handleShow}
               className='redBg darkText'
             >
-              log In
+              Log In
             </Button>
 
-            <Modal show={show} onHide={handleClose} className=''>
-              <ModalHeader closeButton>
-                <ModalTitle>Sign Up</ModalTitle>
+            <Modal show={show} onHide={handleClose} >
+              <div className="bgColor">
+              <ModalHeader className="redBg center text-center">
+                <ModalTitle className='beigeText' >Log In</ModalTitle>
               </ModalHeader>
-              <ModalBody className='offsetBackground' id='signUpForm'>
-                <Container className='offsetBackground '>
+              <ModalBody  className="bgColor">
+                <Container >
                   <Row>
                     <Col />
                     <Col xs={10} lg={8}>
                       <Form noValidate validated={validated}>
+                    
                         <FormGroup className='text-center'>
                           <FormLabel>
-                            <h1>Full Name</h1>
-                          </FormLabel>
-                          <FormControl
-                            onChange={(e) => setUserName(e.target.value)}
-                            type='text'
-                            placeholder='Type Full Name Here!'
-                            required
-                          />
-                        </FormGroup>
-                        <br />
-                        <br />
-                        <FormGroup className='text-center'>
-                          <FormLabel>
-                            <h1>Gamertag</h1>
-                          </FormLabel>
-                          <FormControl
-                            onChange={(e) => setUserGamerTag(e.target.value)}
-                            type='text'
-                            placeholder='Type Gamer Tag Here'
-                            required
-                          />
-                          <Form.Control.Feedback type='invalid'>
-                            Please provide a valid Gamertag.
-                          </Form.Control.Feedback>
-                        </FormGroup>
-                        <br />
-                        <br />
-                        <FormGroup className='text-center'>
-                          <FormLabel>
-                            <h1>UserName</h1>
-                          </FormLabel>
-                          <FormControl
-                            onChange={(e) => setUserUserName(e.target.value)}
-                            type='text'
-                            placeholder='Type Username Here'
-                            required
-                          />
-                          <Form.Control.Feedback type='invalid'>
-                            Please provide a valid Username.
-                          </Form.Control.Feedback>
-                        </FormGroup>
-                        <br />
-                        <br />
-                        <FormGroup className='text-center'>
-                          <FormLabel>
-                            <h1>Console</h1>
-                          </FormLabel>
-                          <FormControl
-                            onChange={(e) => setUserConsole(e.target.value)}
-                            type='radio'
-                            placeholder='Type Password Here'
-                            required
-                          />
-                          <Form.Control.Feedback type='invalid'>
-                            Please provide a valid console.
-                          </Form.Control.Feedback>
-                        </FormGroup>
-                        <br />
-                        <br />
-                        <FormGroup className='text-center'>
-                          <FormLabel>
-                            <h1>Email</h1>
+                            <h1 className='beigeText'>Email</h1>
                           </FormLabel>
                           <FormControl
                             onChange={(e) => setUserEmail(e.target.value)}
@@ -132,7 +73,7 @@ const SignUp = () => {
 
                         <FormGroup className='text-center'>
                           <FormLabel>
-                            <h1>Password</h1>
+                            <h1 className='beigeText'>Password</h1>
                           </FormLabel>
                           <FormControl
                             onChange={(e) => setUserPassword(e.target.value)}
@@ -146,32 +87,18 @@ const SignUp = () => {
                         </FormGroup>
                         <br />
                         <br />
-                        {/* <FormGroup>
-                        <Container>
-                          <Row>
-                            <Col xs={1} />
-                            <Col xs={4} className='text-center'>
-                              <Button type='cancel'>Clear</Button>
-                            </Col>
-                            <Col xs={2} />
-                            <Col xs={4} className='text-center'>
-                              <Button type='Submit'>Submit</Button>
-                            </Col>
-                            <Col xs={1} />
-                          </Row>
-                        </Container>
-                      </FormGroup> */}
+                        
                       </Form>
                     </Col>
                     <Col />
                   </Row>
                 </Container>
               </ModalBody>
-              <ModalFooter>
-                <Button variant='secondary' onClick={handleClose}>
+              <ModalFooter className="redBg">
+                <Button variant='dark' onClick={handleClose}>
                   Close
                 </Button>
-                <Button variant='primary'>Save Changes</Button>
+                <Button variant='dark'>Save Changes</Button>
                 {/* {user
                 ? (state, action) => {
                     Setter(state, action, user)
@@ -179,7 +106,9 @@ const SignUp = () => {
                   }
                 : console.log('user state is empty')} */}
               </ModalFooter>
+              </div>
             </Modal>
+            
           </div>
         ) : (
           <Container>

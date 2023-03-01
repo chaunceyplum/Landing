@@ -303,9 +303,9 @@ const Home = () => {
           </ParallaxLayer>
 
           <ParallaxLayer
-            sticky={{ start: 1, end: 2 }}
-            offset={{ start: 1, end: 2 }}
-            speed={1}
+            sticky={{ start: 1, end: 1.7 }}
+            //offset={{ start: 1, end: 2 }}
+            speed={1.5}
             style={{ ...alignCenter, justifyContent: 'flex-center' }}
             className='homeBackDiv'
           >
@@ -344,10 +344,7 @@ const Home = () => {
                               Morbi quis commodo odio aenean sed adipiscing diam
                               donec. Aliquam purus sit amet luctus venenatis
                               lectus. Venenatis urna cursus eget nunc
-                              scelerisque viverra mauris. Tincidunt nunc
-                              pulvinar sapien et ligula ullamcorper malesuada.
-                              Erat pellentesque adipiscing commodo elit at
-                              imperdiet. Gravida arcu ac tortor dignissim.
+                              scelerisque viverra mauris. 
                             </p>
                           </div>
                         </Container>
@@ -364,12 +361,24 @@ const Home = () => {
           <ParallaxLayer offset={3} speed={-3.5}>
             <Container className=''>
               <Row className='center'>
-                <Col xs={10} lg={12} className='text-center'>
-                  <Container>
-                    <div className='center'>
-                      <img src={pic1} alt={pic1} />
-                    </div>
-                  </Container>
+                <Col xs={12}  className='text-center'>
+                  {/* <Container>
+                    {/* <Row>
+                      <Col />
+                    </Row> 
+                    <Row>
+                       <Col /> 
+                      <Col> */}
+                        <div className='center'>
+                          <img  className='imgClass' src={pic1} alt={pic1} />
+                        </div>
+                      {/* </Col>
+                      {/* <Col /> 
+                    </Row>
+                     <Row>
+                      <Col />
+                    </Row> 
+                  </Container> */}
                 </Col>
               </Row>
             </Container>
