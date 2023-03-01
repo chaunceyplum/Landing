@@ -24,10 +24,10 @@ const Footer = () => {
             <br />
             <Container>
               <Row>
-                <Col xs={8}>
-                  <Form>
+                <Col xs={12}>
+                  <Form className="center">
                     <FormGroup>
-                      <FormLabel>join our newsletter for free stuff</FormLabel>
+                      <FormLabel className="center">join our newsletter for free stuff</FormLabel>
                       <br />
                       <FormControl
                         size='sm'
