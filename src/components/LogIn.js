@@ -32,28 +32,27 @@ const SignUp = () => {
   return (
     <div>
       <div>
-        {!userEmail ? (
-          <div>
-            <Button
-              variant='dark'
-              onClick={handleShow}
-              className='redBg darkText'
-            >
-              Log In
-            </Button>
+        {/* {!userEmail ? ( */}
+        <div>
+          <Button
+            variant='dark'
+            onClick={handleShow}
+            className='redBg darkText'
+          >
+            Log In
+          </Button>
 
-            <Modal show={show} onHide={handleClose} >
-              <div className="bgColor">
-              <ModalHeader className="redBg center text-center">
-                <ModalTitle className='beigeText' >Log In</ModalTitle>
+          <Modal show={show} onHide={handleClose}>
+            <div className='bgColor'>
+              <ModalHeader className='redBg center text-center'>
+                <ModalTitle className='beigeText'>Log In</ModalTitle>
               </ModalHeader>
-              <ModalBody  className="bgColor">
-                <Container >
+              <ModalBody className='bgColor'>
+                <Container>
                   <Row>
                     <Col />
                     <Col xs={10} lg={8}>
                       <Form noValidate validated={validated}>
-                    
                         <FormGroup className='text-center'>
                           <FormLabel>
                             <h1 className='beigeText'>Email</h1>
@@ -87,14 +86,13 @@ const SignUp = () => {
                         </FormGroup>
                         <br />
                         <br />
-                        
                       </Form>
                     </Col>
                     <Col />
                   </Row>
                 </Container>
               </ModalBody>
-              <ModalFooter className="redBg">
+              <ModalFooter className='redBg'>
                 <Button variant='dark' onClick={handleClose}>
                   Close
                 </Button>
@@ -106,15 +104,14 @@ const SignUp = () => {
                   }
                 : console.log('user state is empty')} */}
               </ModalFooter>
-              </div>
-            </Modal>
-            
-          </div>
-        ) : (
+            </div>
+          </Modal>
+        </div>
+        {/* ) : (
           <Container>
             <Row>
               <Col>
-                {/* <a href='#'> */}
+                {/* <a href='#'> 
                 <Container>
                   <Row>
                     <Col xs={4}>
@@ -133,11 +130,11 @@ const SignUp = () => {
                     </Col>
                   </Row>
                 </Container>
-                {/* </a> */}
+                {/* </a> 
               </Col>
             </Row>
           </Container>
-        )}
+        )} */}
       </div>
     </div>
   )

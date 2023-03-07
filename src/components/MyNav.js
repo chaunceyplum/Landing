@@ -71,10 +71,10 @@ const MyNav = () => {
               </NavDropdown> */}
               </Nav>
               <Nav>
-                <Nav.Link href='#deets' className='navText center'>
+                <Nav.Link className='navText center'>
                   <LogIn />
                 </Nav.Link>
-                <Nav.Link eventKey={2} href='#memes' className='navText center'>
+                <Nav.Link className='navText center'>
                   <SignUp />
                 </Nav.Link>
               </Nav>
